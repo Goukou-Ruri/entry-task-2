@@ -44,8 +44,10 @@ export default class ListItem extends Component {
         else{
             this.state.pic = (<p></p>);
         }
+        let begin_time = `${moment(this.props.param.begin_time).format('DD MMM YYYY HH:mm')}`;
+        let end_time = `${moment(this.props.param.end_time).format('DD MMM YYYY HH:mm')}`;
         return (
-            <div className={style.container} onClick={ (e) => {this.props.onClick(this.props.param.id)}}>
+            <div className={style.container} onClick={ (e) => {this.props.onClick(this.props.param.id, begin_time, end_time)}}>
                 <div className={style['userInfo-channel']}>
                    <div className={style.userInfo}>    
                         <img src={this.props.param.creator.avatar} alt="头像未上传"/>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Topbar from '../component/topbar.js';
-import ListItem from '../component/list-item';
-import Search from '../component/search-window';
+import Topbar from '../components/topbar.js';
+import ListItem from '../components/list-item';
+import Search from '../components/search-window';
 import my_fetch from '../API/fetch';
 import style from './list.module.css';
 
@@ -136,8 +136,8 @@ export default class List extends Component {
         window.location.reload();
     }
 
-    goto_detail = (id) => {
-        this.props.history.push({pathname: `/list:${id}`, state: {...this.props.location.state}});
+    goto_detail = (id, begin_time, end_time) => {
+        this.props.history.push({pathname: `/list:${id}`, state: {...this.props.location.state, begin_time: begin_time, end_time: end_time}});
     }
 
     render() {

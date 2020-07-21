@@ -149,7 +149,6 @@
       border-bottom-color: #E8E8E8;
       border-bottom-width: 2px;
       border-bottom-style: solid;
-      background-color: #FAF9FC;
   }
 
   ul.pics {
@@ -163,7 +162,7 @@
   }
 
   ul.pics img {
-      width: 180px;
+      width: 150px;
       height: 100px;
   }
 
@@ -214,3 +213,183 @@
       z-index: 11;
       /* margin-top: 24px; */
   }
+
+  /* ------------------------------------ when */
+
+  div.when {
+      box-sizing: border-box;
+      width: 100%;
+      height: 137px;
+      padding: 16px 16px 16px 0;
+      border-bottom-color: #E8E8E8;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      margin-left: 16px;
+  }
+
+  div.part_title {
+      font-family: SourceSansPro-Semibold;
+      font-size: 16px;
+      color: #8560A9;
+      border-left-color: #8560A9;
+      border-left-width: 4px;
+      border-top-left-radius: 2px;
+      border-left-style: solid;
+      padding-left: 4px;     
+  }
+
+  div.when_content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding-top: 16px;
+  }
+
+  div.when_content > div {
+      width: 100%;
+  }
+
+  div.date_from {
+      border-right-color: #E8E8E8;
+      border-right-width: 1px;
+      border-right-style: solid;
+  }
+
+  div.when_date_bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+  div.when_date_bar img {
+      width: 16px;
+      height: 13.8px;
+      margin-right: 4px;
+  }
+
+  p.when_date {
+      margin: 0;
+  }
+
+  p.when_time {
+      font-family: SourceSansPro-Regular;
+      color: #AECB4F;
+      font-size: 32px;
+      margin: 0;
+      margin-left: 43px;
+  }
+
+    /* ------------------------------------ where */
+
+    div.where {
+        box-sizing: border-box;
+        width: 100%;
+        height: 193px;
+        padding: 16px 16px 16px 16px;
+        border-bottom-color: #E8E8E8;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+    }
+
+    div.where div.part_title {
+        margin-bottom: 8px;
+    }
+
+    div.where p {
+        font-family: SourceSansPro-Semibold;
+        font-size: 14px;
+        columns: #67616D;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    img.where_pic {
+        width: 288px;
+        height: 88px;
+        border-radius: 10px;
+    }
+
+     /* ------------------------------------ user_list */ 
+
+    div.user_list {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        padding: 0 16px;
+        border-bottom-color: #E8E8E8;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+    }
+
+    div.user_list > div{
+        display: flex;
+        align-items: flex-start;
+        padding-right: 30px;
+    }
+
+    div.user_container {
+        border-bottom-color: #E8E8E8;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    div.going_likes {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    div.going_likes p {
+        color: #67616D;
+        font-family: SourceSansPro-Regular;
+        font-size: 12px;
+        width: 50px;
+        margin: 0;
+    }
+
+     img.icon {
+         width: 12px;
+         height: 9.8px;
+         margin-right: 6px;
+     }
+
+     ul.img_list {
+         list-style-type: none;
+         display: flex;
+         padding: 0;
+         flex-wrap: wrap;
+         margin: 0;
+     }
+
+     img.user_icon {
+         width: 24px;
+         height: 24px;
+         border-radius: 100%;
+         margin-right: 7px;
+     }
+
+     div.user_list_but {
+         position: absolute;
+         width: 24px;
+         height: 24px;
+         border-radius: 100%;
+         border-color: #AC8EC9;
+         border-width: 1px;
+         border-style: solid;
+         right: 16px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     div.down_tri {
+         width: 7px;
+         height: 7px;
+         border-width:  1px 1px 0 0;
+         border-color: #AC8EC9 #AC8EC9 transparent transparent;
+         border-style: solid;
+         background-color: #FFFFFF;
+         transform: rotate(135deg);
+         margin-bottom: 2px;
+     }
