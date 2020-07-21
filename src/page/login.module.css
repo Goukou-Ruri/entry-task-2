@@ -1,0 +1,171 @@
+   @font-face {
+     font-family: SourceSansPro-Semibold;
+     src: url(../font/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+   }
+
+   @font-face {
+     font-family: SourceSansPro-Bold;
+     src: url(../font/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+   }
+
+   @font-face {
+     font-family: SourceSansPro-Regular;
+     src: url(../font/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+   }
+   
+  .container {
+      width: 320px;
+      height: 100%;
+  } 
+
+  .box {
+    width: 320px;
+    height: calc(100%-64px);
+    background-image: url(../img/Street-Dance-01.jpg);
+    background-size: cover;
+    background-position: -100px, 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cover-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(133, 96, 169, 0.7), rgba(133, 96, 169, 1));
+    opacity: 0.85;
+    display: grid;
+    grid-template-rows: 1fr 150px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; */
+  }
+
+  .text-pic {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 69px 104px 65px;
+  }
+
+  .title-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .h1 {
+    font-size: 24px;
+    color: #D5EF7F;
+    margin-top: 16px;
+  }
+
+  .h2 {
+    font-size: 16px;
+    color: #D5EF7F;
+    font-family: SourceSansPro-Semibold;
+    margin: 0;
+  }
+
+  .svg-div {
+    padding: 1px;
+    border-radius: 100%;
+    border-width: 1px;
+    border-color: rgba(250, 250, 250, 0.5);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+
+  .svg-Layer1{
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    color: #D5EF7F;
+    border-radius: 100%;
+    border-width: 1px;
+    border-color: #D5EF7F;
+    border-style: solid;
+    z-index: 10;
+  }
+
+  div.input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  input.username {
+    background-image: url(../img/svg/user.svg);
+    background-repeat: no-repeat;
+    background-size: 14px, 14px;
+    background-position: 13.3px, calc(50%-14px);
+    margin-bottom: 16px;
+
+  }
+
+  input.password {
+    background-image: url(../img/svg/password.svg);
+    background-repeat: no-repeat;
+    background-size: 14px, 14px;
+    background-position: 13.3px, calc(50%-14px);
+  }
+
+  input.input {
+    box-sizing: border-box;
+    width: 240px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 0.7;
+    font-size: 16px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    outline: none;
+  }
+
+  input.input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  input::-webkit-input-placeholder { 
+      color:#453257;
+      font-family: SourceSansPro-Regular;
+  }
+
+  input::-moz-placeholder {   /* Mozilla Firefox 19+ */
+      color:#453257;
+      font-family: SourceSansPro-Regular;
+  }
+
+  input:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+      color:#453257;
+      font-family: SourceSansPro-Regular;
+  }
+  
+  input:-ms-input-placeholder {  /* Internet Explorer 10-11 */ 
+      color:#453257;
+      font-family: SourceSansPro-Regular;
+  }
+
+  button.button{
+      width: 320px;
+      height: 64px;
+      background-color: #D5EF7F;
+      padding: 0;
+      border-width: 0;
+      font-size: 16px;
+      font-family: SourceSansPro-Semibold;
+  }

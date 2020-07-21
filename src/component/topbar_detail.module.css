@@ -1,0 +1,44 @@
+img { 
+    content: normal !important; 
+  }
+  
+  div.container {
+    box-sizing: border-box;
+    width: 320px;
+    height: 40px;
+    background-color: #8560A9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 19px;
+    padding-right: 14px;
+    align-items: center;
+    position: fixed;
+  }
+
+  .svg-Layer1 {
+    width: 24px;
+    height: 24px;
+    border-width: 0;
+    padding: 0;
+  }
+
+  .svg-Layer2 {
+    width: 20.9px;
+    height: 24px;
+    padding: 0;
+    justify-self: center;
+  }
+
+  img.user-img {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    justify-self: flex-end;
+    border-radius: 100%;
+  }
+
+  div.fill {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }

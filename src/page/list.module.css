@@ -1,0 +1,82 @@
+  @font-face {
+      font-family: SourceSansPro-Semibold;
+      src: url(../font/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+  }  
+  @font-face {
+      font-family: SourceSansPro-Regular;
+      src: url(../font/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+  }
+
+  div.search-tip {
+      box-sizing: border-box;
+      width: 320px;
+      height: 70px;
+      display: grid;
+      grid-template-rows: 9fr 8fr;
+      background-color: #FAF9FC;
+      padding: 11px 16px 11px 26px;
+  }
+
+  div.res-with-button {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+  }
+
+  div.search-tip p {
+      margin: 0;
+  }
+
+  p.resCount {
+      color: #8560A9;
+      font-size: 16px;
+      font-family: SourceSansPro-Semibold;
+  }
+
+  p.resTip {
+      color: #67616D;
+      font-size: 12px;
+      font-family: SourceSansPro-Regular;
+  }
+
+  div.search-tip button {
+      width: 84px;
+      height: 24px;
+      background-color: #D5EF7F;
+      color: #67616D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border-radius: 12px;
+      border-width: 0;
+      font-size: 10px;
+      font-family: SourceSansPro-Semibold;;
+  }
+
+  div.noActivity {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  div.noActivity div {
+      width: 60px;
+      height: 60px;
+      background-image: url(../img/svg/no-activity.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 0;
+  }
+
+  div.noActivity p {
+      margin: 0;
+      margin-top: 14px;
+  }
+
+
+
